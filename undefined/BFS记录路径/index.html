@@ -247,9 +247,9 @@
           
           
           <li>
-            <a href="/about/">
+            <a href="/categories/">
               
-              ABOUT
+              CATEGORIES
               
               
             </a>
@@ -258,9 +258,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/about/">
               
-              ARCHIVES
+              ABOUT
               
               
             </a>
@@ -280,9 +280,9 @@
           
           
           <li>
-            <a href="/categories/">
+            <a href="/archive/">
               
-              CATEGORIES
+              ARCHIVES
               
               
             </a>
@@ -404,7 +404,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">2.3k</span> In Total
+              Words <span class="post-count">2.2k</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -473,8 +473,8 @@
 <p>以1654为例：</p>
 <h2 id="1654-Treasure-House">1654 Treasure House</h2>
 <p>选这个题是因为学这种方法的时候就是做的这个题啦 :P（才不是因为要把师哥挂出来orz）</p>
-<p><img src="https://img-blog.csdnimg.cn/44edf1d6ad7a4065a0736b670a7f1b3f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQ3jmm6bCsA==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p>
-<p><img src="https://img-blog.csdnimg.cn/8c07ba227be04b889f1101129c4fba22.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQ3jmm6bCsA==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑 大概意思就是说给定n*m的矩阵，矩阵由字符$和#组成，$位置可以走，#不能走，求左上角到右下角的最短路程并按照字典序最大输出路径。</p>
+<p><img src="D:%5Czmh-blog%5Cblog%5Csource%5Cimg%5Cblogimg%5C3%5C1.jpg" alt="img"><img src="D:%5Czmh-blog%5Cblog%5Csource%5Cimg%5Cblogimg%5C3%5C2.jpg" alt="点击并拖拽以移动"></p>
+<p>大概意思就是说给定n*m的矩阵，矩阵由字符$和#组成，$位置可以走，#不能走，求左上角到右下角的最短路程并按照字典序最大输出路径。</p>
 <p>很显然搜索方法使用BFS，即模拟队列方法搜索，广度优先寻找最短路径，但是需要找出最短路径，我们使用的方法是另开结构体存路径。</p>
 <p>下面根据代码理解叙述：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iterator&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> maxn 10000005</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> INF 0x3f3f3f3f</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line"><span class="comment">//多组输入记得每次循环之前初始化（数组，栈，队列，某些变量）！！！</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">13</span>;</span><br><span class="line"><span class="type">char</span> c[N][N];</span><br><span class="line"><span class="type">int</span> n,m,x,y;</span><br><span class="line"><span class="type">int</span> ans,cnt;</span><br><span class="line"><span class="type">int</span> head,end;</span><br><span class="line"><span class="type">bool</span> vis[N][N];</span><br><span class="line"><span class="type">int</span> dx[<span class="number">4</span>]=&#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">-1</span>,<span class="number">0</span>&#125;;</span><br><span class="line"><span class="type">int</span> dy[<span class="number">4</span>]=&#123;<span class="number">-1</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>&#125;;</span><br><span class="line"><span class="type">char</span> dir[N][N];</span><br><span class="line"><span class="type">int</span> val[N][N];</span><br></pre></td></tr></table></figure>
