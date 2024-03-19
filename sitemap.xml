@@ -29,6 +29,15 @@
   </url>
   
   <url>
+    <loc>http://yoursite-url/undefined/BFS%E8%AE%B0%E5%BD%95%E8%B7%AF%E5%BE%84/</loc>
+    
+    <lastmod>2021-11-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yoursite-url/undefined/C-STL%E4%B9%8Bmap%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</loc>
     
     <lastmod>2021-11-21</lastmod>
@@ -74,7 +83,7 @@
 
   
   <url>
-    <loc>http://yoursite-url/tags/STL/</loc>
+    <loc>http://yoursite-url/tags/BFS/</loc>
     <lastmod>2024-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -82,6 +91,13 @@
   
   <url>
     <loc>http://yoursite-url/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/STL/</loc>
     <lastmod>2024-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
