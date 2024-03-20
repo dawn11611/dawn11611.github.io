@@ -244,10 +244,12 @@
 
           
           
+          
+          
           <li>
-            <a href="/categories/">
+            <a href="/about/">
               
-              CATEGORIES
+              ABOUT
               
               
             </a>
@@ -255,12 +257,10 @@
           
           
           
-          
-          
           <li>
-            <a href="/about/">
+            <a href="/categories/">
               
-              ABOUT
+              CATEGORIES
               
               
             </a>
@@ -466,8 +466,7 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <h2 id="C-STL之map基本知识">C++ STL之map基本知识</h2>
-<p>STL基本是刚入队的时候讲的知识点，当时用的栈和队列比较多，map，vector，pair等用的较少，今天做题发现map一点也不会用了QAQ，赶紧复习一下，，，</p>
+        <p>STL基本是刚入队的时候讲的知识点，当时用的栈和队列比较多，map，vector，pair等用的较少，今天做题发现map一点也不会用了QAQ，赶紧复习一下，，，</p>
 <p>以题目为例：<a target="_blank" rel="noopener" href="http://www.acmicpc.sdnu.edu.cn/problem/show/1058">1058 人名查询</a>  <a target="_blank" rel="noopener" href="http://www.acmicpc.sdnu.edu.cn/problem/show/1185">1185 统计数字</a>  <a target="_blank" rel="noopener" href="http://www.acmicpc.sdnu.edu.cn/problem/show/1321">1321 众数</a></p>
 <hr>
 <p>map：map是STL中的一个关联容器，它提供一对一（其中第一个（first）可以称为关键字key，每个关键字只能在map中出现一次，第二个（second）可能称为该关键字的值value）的数据处理能力，由于这个特性，它完成有可能在我们处理一对一数据的时候，在编程上提供快速通道。这里说下map内部数据的组织，map内部自建一颗红黑树(一 种非严格意义上的平衡二叉树)，这颗树具有对数据自动排序的功能，<strong>所以在map内部所有的数据都是有序的</strong>。map为我们提供了一种数据之间的对应关系，并且这种关系支持快速的查找等操作，即通过键值快速地查找对应的值，也可以完成对键值的遍历等功能。</p>
@@ -639,7 +638,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#C-STL%E4%B9%8Bmap%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">C++ STL之map基本知识</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1321-%E4%BC%97%E6%95%B0"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">1321 众数</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1185-%E7%BB%9F%E8%AE%A1%E6%95%B0%E5%AD%97"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">1185 统计数字</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1058-%E4%BA%BA%E5%90%8D%E6%9F%A5%E8%AF%A2"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">1058 人名查询</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%80%9D%E8%80%83%EF%BC%9A"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">思考：</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1321-%E4%BC%97%E6%95%B0"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">1321 众数</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1185-%E7%BB%9F%E8%AE%A1%E6%95%B0%E5%AD%97"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">1185 统计数字</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1058-%E4%BA%BA%E5%90%8D%E6%9F%A5%E8%AF%A2"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">1058 人名查询</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%80%9D%E8%80%83%EF%BC%9A"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">思考：</span></a></li></ol>
         
         </div>
       </aside>
