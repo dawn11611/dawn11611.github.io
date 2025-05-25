@@ -316,13 +316,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/%E4%BA%A4%E4%BA%92%E9%A2%98/</loc>
-    <lastmod>2025-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite-url/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2025-05-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -338,6 +331,13 @@
   
   <url>
     <loc>http://yoursite-url/tags/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2025-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/%E4%BA%A4%E4%BA%92%E9%A2%98/</loc>
     <lastmod>2025-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -393,6 +393,20 @@
   </url>
   
   <url>
+    <loc>http://yoursite-url/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+    <lastmod>2025-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/%E5%8D%9A%E5%BC%88/</loc>
+    <lastmod>2025-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://yoursite-url/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</loc>
     <lastmod>2025-05-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -407,13 +421,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
-    <lastmod>2025-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite-url/tags/%E8%92%99%E5%85%8B/</loc>
     <lastmod>2025-05-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -421,7 +428,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/%E5%8D%9A%E5%BC%88/</loc>
+    <loc>http://yoursite-url/tags/%E5%8C%BA%E9%97%B4DP/</loc>
     <lastmod>2025-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -429,13 +436,6 @@
   
   <url>
     <loc>http://yoursite-url/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/</loc>
-    <lastmod>2025-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/tags/%E5%8C%BA%E9%97%B4DP/</loc>
     <lastmod>2025-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
